@@ -31,10 +31,6 @@ public class UserService {
         return createdUser;
     }
 
-    public void deleteUser(String userId, String imageId){
-        imagePostRepository.deleteById(Long.parseLong(imageId));
-    }
-
     public User findUserByEmailId(String email) throws Exception {
         return  userRepository.findByEmailId(email);
     }
